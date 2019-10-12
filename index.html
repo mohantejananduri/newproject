@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>get into the table.....!</title>
-      <meta charset="windows-1252">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--<style >
-         table#tablestyle {
-           table-layout: fixed;
-           border-collapse: collapse;
-           border: 3px solid gray;
-         }
-         
-         #tablestyle th,
-         #tablestyle td {
-           border: 1px solid gray;
-           text-align: center;
-         }
-         
-         #tablestyle tr:nth-child(even) {
-           background-color: lightblue;
-         }
-         </style>-->
-         <script>
-            function addrow() {
-              var Name = document.getElementById('name').value;
-              var Gender = document.getElementById('gender').value;
-              var Age = document.getElementById('age').value;
-            
-              var Table = document.getElementsByTagName('table')[0];
-            
-              var newrow = Table.insertRow(Table.rows.length);
-              var cel1 = newrow.insertCell(0);
-              var cel2 = newrow.insertCell(1);
-              var cel3 = newrow.insertCell(2);
-            
-              cel1.innerHTML = Name;
-              cel2.innerHTML = Gender;
-              cel3.innerHTML = Age;
-            }
-         </script>
-      
-   </head>
-   <body>
-      <img src="logo.jpeg" height="100px" , width="400px"><br></br>
-      Name: <input type="text" name="name" id="name"/><br></br>
-      Gender: <input type="text" name="gender" id="gender"/><br></br>
-      Age: <input type="text" name="age" id="age"/><br></br>
-      <button onclick="addrow();">Add Row</button><br></br>
-      <table border="1">
-         <tr>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Age</th>
-         </tr>
-         <tr>
-            <td>Mohan</td>
-            <td>Male</td>
-            <td>26</td>
-         </tr>
-         <tr>
-            <td>Krishna</td>
-            <td>Male</td>
-            <td>28</td>
-         </tr>
-         <tr>
-            <td>Srikar</td>
-            <td>Male</td>
-            <td>22</td>
-         </tr>
-      </table>
 
-      
-   </body>
+<head>
+   <title>New Project</title>
+   <meta charset="windows-1252">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      table#tablestyle {
+         table-layout: fixed;
+         border-collapse: collapse;
+         border: 3px solid gray;
+      }
+
+      #tablestyle th,
+      #tablestyle td {
+         border: 1px solid gray;
+         text-align: center;
+      }
+
+      #tablestyle tr:nth-child(even) {
+         background-color: lightblue;
+      }
+   </style>
+
+
+</head>
+
+<body>
+   <img src="logo.jpeg" height="100px" , width="400px"><br></br>
+   Name: <input type="text" name="name" id="name" /><br></br>
+   Gender: <input type="text" name="gender" id="gender" /><br></br>
+   Age: <input type="text" name="age" id="age" /><br></br>
+   <button onclick="addrow();">Add Row</button><br></br>
+   <table border="1">
+      <tr>
+         <th>Name</th>
+         <th>Gender</th>
+         <th>Age</th>
+      </tr>
+      <tr>
+         <td>Mohan</td>
+         <td>Male</td>
+         <td>26</td>
+      </tr>
+      <tr>
+         <td>Krishna</td>
+         <td>Male</td>
+         <td>28</td>
+      </tr>
+      <tr>
+         <td>Srikar</td>
+         <td>Male</td>
+         <td>22</td>
+      </tr>
+   </table>
+
+   <script>
+      function addrow() {
+         var Name = document.getElementById('name').value;
+         var Gender = document.getElementById('gender').value;
+         var Age = document.getElementById('age').value;
+
+         var Table = document.getElementsByTagName('table')[0];
+
+         var newrow = Table.insertRow(Table.rows.length);
+         var cel1 = newrow.insertCell(0);
+         var cel2 = newrow.insertCell(1);
+         var cel3 = newrow.insertCell(2);
+
+         cel1.innerHTML = Name;
+         cel2.innerHTML = Gender;
+         cel3.innerHTML = Age;
+      }
+   </script>
+</body>
+
 </html>
